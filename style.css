@@ -48,7 +48,6 @@ body {
     background-color: #f1f1f1;
 }
 
-
 img {
     width: 150px;
     border-radius: 75px; /*round image*/
@@ -65,11 +64,14 @@ h1 {
     font-size: 24px;
 }
 
-
 h2 {
-    font-size: 20px;
-    margin-top: 10px;
-    color:cadetblue
+    font-size: 16px;
+    font-weight: bold;
+    color: cadetblue;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 ul {
@@ -95,6 +97,10 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section.intro {
+    margin-top: 100px;
+}
+
 /************Footer************/
 footer {
     background-color:#231C1A;
@@ -110,6 +116,10 @@ footer p {
     justify-content: space-between;
     font-weight: bold;
     line-height: 2.5;
+}
+
+.container {
+    padding: 12px 0px 12px;
 }
 
 .menu {
@@ -137,5 +147,9 @@ footer p {
         right: 20px;
         border: none;
         cursor: pointer;
+    }
+
+    .eventTitle {
+        line-height: 1.0;
     }
 }
