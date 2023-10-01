@@ -1,17 +1,31 @@
+/*green-blue: cadetblue*/
+/*black: #231C1A*/
+
 * {
     padding: 0;
     margin: 0;
 }
 
+/************header************/
+
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    padding: 0px;
     height: 80px;
     width: 100%;
+    background-color: #231C1A;
 }
 
+/************my name************/
+h1 {
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    line-height: 80px;
+    color: cadetblue
+}
+
+/************navigations************/
 header a {
     color: white;
     text-decoration: none;
@@ -22,11 +36,10 @@ header a:hover {
 }
 
 header nav {
-    background-color: #333;
-    position: fixed;
-    text-align: center;
-    width: 100%;
+    position: absolute;
+    right: 5vw;
     top: 0;
+    line-height: 80px;
 }
 
 header li {
@@ -34,34 +47,28 @@ header li {
     margin-right: 4vw;
 }
 
+/************body************/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+/************section************/
 section {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color:#d6ccc2;
-}
-
 img {
-    width: 100px;
-    border-radius: 50px; /*round image*/
-    float: left; /*push the image element to the left side of the text element*/
+    width: 150px;
+    border-radius: 75px; /*round image*/
     margin-right: 10px; /*add space after the image*/
-}
-
-.username {
-    font-weight: bold;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
+    float: right; /*push the image element to the left side of the text element*/
 }
 
 h1 {
@@ -71,22 +78,36 @@ h1 {
 h2 {
     font-size: 20px;
     margin-top: 10px;
+    color:cadetblue
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.5;
+ul {
+    list-style: none; /* Remove default bullets */
 }
 
-/* ul {
-    list-style-type: none;
-    padding: 0;
-} */
+main ul li::before {
+content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+color: cadetblue;
+font-weight: bold; /* If you want it to be bold */
+display: inline-block; /* Needed to add space between the bullet and the text */
+width: 1em; /* Also needed for space (tweak if needed) */
+margin-left: -1em; /* Also needed for space (tweak if needed) */
+padding-left: 1em;
+}
 
+/************classes************/
+.eventTitle {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    line-height: 2.5;
+}
 
-li {
-    list-style-type: disc;
-    list-style-position: inside;
-    text-indent: -1em;
-    padding-left: 1em;
+/************my name************/
+footer {
+    background-color:#231C1A;
+}
+
+footer p {
+    color: white
 }
