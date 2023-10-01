@@ -6,24 +6,17 @@
     margin: 0;
 }
 
-/************header************/
+/************Header************/
 
 header {
     text-align: left;
-    padding: 0px;
     height: 80px;
     width: 100%;
     background-color: #231C1A;
+    position: fixed;
+    top: 0;
 }
 
-/************my name************/
-h1 {
-    position: absolute;
-    left: 5vw;
-    top: 0;
-    line-height: 80px;
-    color: cadetblue
-}
 
 /************navigations************/
 header a {
@@ -35,7 +28,7 @@ header a:hover {
     text-decoration: underline;
 }
 
-header nav {
+header ul {
     position: absolute;
     right: 5vw;
     top: 0;
@@ -47,7 +40,7 @@ header li {
     margin-right: 4vw;
 }
 
-/************body************/
+/************Body************/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -55,14 +48,6 @@ body {
     background-color: #f1f1f1;
 }
 
-/************section************/
-section {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 img {
     width: 150px;
@@ -72,8 +57,14 @@ img {
 }
 
 h1 {
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    line-height: 80px;
+    color: cadetblue;
     font-size: 24px;
 }
+
 
 h2 {
     font-size: 20px;
@@ -95,7 +86,25 @@ margin-left: -1em; /* Also needed for space (tweak if needed) */
 padding-left: 1em;
 }
 
-/************classes************/
+/************Section************/
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/************Footer************/
+footer {
+    background-color:#231C1A;
+}
+
+footer p {
+    color: white
+}
+
+/************Classes************/
 .eventTitle {
     display: flex;
     justify-content: space-between;
@@ -103,11 +112,30 @@ padding-left: 1em;
     line-height: 2.5;
 }
 
-/************my name************/
-footer {
-    background-color:#231C1A;
+.menu {
+    display: none;
 }
 
-footer p {
-    color: white
+/************Responsive Design***********/
+@media screen and (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+
+    header h1 {
+        left: 50%;
+        transform: translate(-50%)
+    }
+
+    .menu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        border: none;
+        cursor: pointer;
+    }
 }
