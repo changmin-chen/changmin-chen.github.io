@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: cadetblue;
 }
@@ -47,8 +47,8 @@ header a:hover {
 
 header ul {
     position: absolute;
-    right: 5vw;
     top: 0;
+    right: 1vw;
     line-height: 80px;
 }
 
@@ -103,12 +103,22 @@ section.intro {
 
 /************Footer************/
 footer {
-    background-color:#231C1A;
+    background-color:#000000;
+    color: #b7b7b7;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+    flex-direction: column;
 }
 
-footer p {
-    color: white
+footer li {
+    display: inline;
+    margin-right: 4vw;
 }
+
+
 
 /************Classes************/
 .eventTitle {
@@ -124,6 +134,15 @@ footer p {
 
 .menu {
     display: none;
+}
+
+/************Icons************/
+.fa-solid {
+    color: white;
+}
+
+.fa-brands {
+    color: white;
 }
 
 /************Responsive Design***********/
