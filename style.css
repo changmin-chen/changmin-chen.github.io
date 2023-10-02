@@ -6,6 +6,25 @@
     margin: 0;
 }
 
+h1 {
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    line-height: 80px;
+    color: cadetblue;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: cadetblue;
+}
+
+h3 {
+    font-size: 16px;
+}
+
 /************Header************/
 
 header {
@@ -17,8 +36,6 @@ header {
     top: 0;
 }
 
-
-/************navigations************/
 header a {
     color: white;
     text-decoration: none;
@@ -40,6 +57,7 @@ header li {
     margin-right: 4vw;
 }
 
+
 /************Body************/
 body {
     font-family: Arial, sans-serif;
@@ -55,24 +73,6 @@ img {
     float: right; /*push the image element to the left side of the text element*/
 }
 
-h1 {
-    position: absolute;
-    left: 5vw;
-    top: 0;
-    line-height: 80px;
-    color: cadetblue;
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 16px;
-    font-weight: bold;
-    color: cadetblue;
-}
-
-h3 {
-    font-size: 16px;
-}
 
 ul {
     list-style: none; /* Remove default bullets */
@@ -118,7 +118,7 @@ footer p {
     line-height: 2.5;
 }
 
-.container {
+.eventContainer {
     padding: 12px 0px 12px;
 }
 
