@@ -69,8 +69,8 @@ body {
 img {
     width: 150px;
     border-radius: 75px;
-    float: right;
-    margin: 20px auto;
+    margin-left: 0;
+    margin-right: 30px;
 }
 
 
@@ -97,6 +97,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 /************Footer************/
 footer {
     background-color:#000000;
@@ -115,8 +116,13 @@ footer li {
 }
 
 
-
 /************Classes************/
+.intro-with-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .event-title {
     display: flex;
     justify-content: space-between;
