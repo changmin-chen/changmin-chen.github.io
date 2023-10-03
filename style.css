@@ -19,10 +19,12 @@ h2 {
     font-size: 18px;
     font-weight: bold;
     color: cadetblue;
+    line-height: 2.0;
 }
 
 h3 {
     font-size: 16px;
+    line-height: 2.0;
 }
 
 /************Header************/
@@ -127,12 +129,12 @@ footer li {
 .event-title {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
-    line-height: 2.5;
 }
 
 .event-container {
-    padding: 12px 0px 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -171,8 +173,12 @@ footer li {
         cursor: pointer;
     }
 
-    .eventTitle {
-        line-height: 1.0;
+    .event-title {
+        flex-direction: column;
+    }
+
+    .event-title h3 {
+        line-height: 1.2;
     }
 
     .intro-with-photo {
