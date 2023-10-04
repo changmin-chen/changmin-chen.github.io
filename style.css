@@ -27,6 +27,10 @@ h3 {
     line-height: 2.0;
 }
 
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
 /************Header************/
 
 header {
@@ -82,20 +86,6 @@ img {
 }
 
 
-ul {
-    list-style: none; /* Remove default bullets */
-}
-
-main ul li::before {
-content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-color: cadetblue;
-font-weight: bold; /* If you want it to be bold */
-display: inline-block; /* Needed to add space between the bullet and the text */
-width: 1em; /* Also needed for space (tweak if needed) */
-margin-left: -1em; /* Also needed for space (tweak if needed) */
-padding-left: 1em;
-}
-
 /************Section************/
 section {
     max-width: 1000px;
@@ -104,6 +94,7 @@ section {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 
 /************Footer************/
@@ -125,10 +116,31 @@ footer li {
 
 
 /************Classes************/
+.bullet-list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: cadetblue;
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    padding-left: 1em;
+}
+
 .intro-with-photo {
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+.title-top-article-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    padding-bottom: 12px;
 }
 
 .event-title {
@@ -136,11 +148,6 @@ footer li {
     justify-content: space-between;
 }
 
-.event-container {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
 
 .menu {
     display: none;
