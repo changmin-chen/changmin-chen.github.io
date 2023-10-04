@@ -72,6 +72,8 @@ body {
     background-color: #f1f1f1;
 }
 
+
+/************Images************/
 img {
     width: 250px;
     margin-right: 20px;
@@ -83,6 +85,11 @@ img {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
+    align-self: center;
+}
+
+.event img {
+    height: 250px;
 }
 
 
@@ -126,20 +133,19 @@ footer li {
     padding-left: 1em;
 }
 
+.menu {
+    display: none;
+}
+
 .intro-with-photo {
     display: flex;
     justify-content: start;
-    align-items: center;
 }
 
-.title-top-article-bot {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
+/************Event************/
 .event {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 12px;
     padding-bottom: 12px;
 }
 
@@ -148,10 +154,6 @@ footer li {
     justify-content: space-between;
 }
 
-
-.menu {
-    display: none;
-}
 
 /************Icons************/
 .fa-solid {
