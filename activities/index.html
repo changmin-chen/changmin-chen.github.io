@@ -3,33 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Changmin</title>
+    <title>Activities - Changmin Chen</title>
     <link rel="stylesheet" href="../style.css" />
     <script
       src="https://kit.fontawesome.com/e99936643b.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header>
-      <a href="/"><h1>Chang-Min Chen</h1></a>
+  <body class="bg-gray-100 pt-20">
+    <header class="bg-primary fixed top-0 w-full h-20">
+      <button class="menu">&#9776;</button>
+      <a href="/"><h1 class="logo">Changmin Chen</h1></a>
+      <nav class="text-white absolute right-0 flex items-center">
+        <ul>
+          <li class="inline mr-8"><a href="/projects/">Projects</a></li>
+          <li class="inline mr-8"><a href="/activities/">Activities</a></li>
+          <li class="inline mr-8"><a href="#">Blogs</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section class="activities">
-        <ul class="event-container">
-          <li class="event">
+      <section>
+        <ul class="md:grid gap-12 grid-cols-3">
+          <li>
             <div>
               <h2>Test</h2>
               <p>My activities!</p>
             </div>
           </li>
-          <li class="event">
+          <li>
             <div>
               <h2>National Taiwan University Intern</h2>
               <p>Collaboration</p>
             </div>
           </li>
-          <li class="event">
+          <li>
             <div>
               <h2>Osaka Japan - Radiotherapy Intern</h2>
               <p>Two months</p>

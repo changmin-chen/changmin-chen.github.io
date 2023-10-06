@@ -14,23 +14,27 @@
     ></script>
     <script src="index.js" defer></script>
   </head>
-  <body>
-    <header>
+  <body class="bg-gray-100 pt-20">
+    <header class="bg-primary fixed top-0 w-full h-20">
       <button class="menu">&#9776;</button>
-      <a href="./"><h1>Changmin Chen</h1></a>
-      <nav>
+      <a href="/"><h1 class="logo">Changmin Chen</h1></a>
+      <nav class="text-white absolute right-0 flex items-center">
         <ul>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/activities/">Activities</a></li>
-          <li><a href="#">Research Interests</a></li>
+          <li class="inline mr-8"><a href="/projects/">Projects</a></li>
+          <li class="inline mr-8"><a href="/activities/">Activities</a></li>
+          <li class="inline mr-8"><a href="#">Blogs</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="profile">
-        <h2>About</h2>
-        <div class="intro-with-photo">
-          <img src="images/ProfilePicture.png" alt="profile-photo" />
+      <section class="bg-white mx-auto my-5 p-5 max-w-5xl">
+        <h2 class="text-secondary text-2xl font-bold">About</h2>
+        <div class="flex justify-start">
+          <img
+            src="images/ProfilePicture.png"
+            alt="profile-photo"
+            class="w-1/5 self-center mr-5 rounded-full"
+          />
           <p>
             I am <b>Chang-Min Chen</b>, a recent master's graduate in medical
             device and imaging, with extensive experience in medical data
@@ -49,69 +53,71 @@
           </p>
         </div>
       </section>
-      <section class="experience">
-        <h2>Experience</h2>
+      <section class="bg-white mx-auto my-5 p-5 max-w-5xl">
+        <h2 class="text-secondary text-2xl font-bold">Experience</h2>
         <ul class="event-container">
           <li class="event">
-            <div class="event-title">
+            <div class="font-bold flex justify-between">
               <h3>R&D Engineer</h3>
               <h3>AUO Corporation</h3>
               <h3>07/2022-08/2022</h3>
             </div>
-            <ul class="bullet-list">
+            <ul class="list-disc list-inside">
               <li>first thing</li>
               <li>second thing</li>
             </ul>
           </li>
           <li class="event">
-            <div class="event-title">
+            <div class="font-bold flex justify-between">
               <h3>Research Assistant</h3>
               <h3>National Yang Ming Chiao Tung University</h3>
               <h3>02/2019-03/2021</h3>
             </div>
-            <ul class="bullet-list">
+            <ul class="list-disc list-inside">
               <li>first thing</li>
               <li>second thing</li>
             </ul>
           </li>
         </ul>
       </section>
-      <section class="education">
-        <h2>Education</h2>
-        <ul class="event-container">
+      <section class="bg-white mx-auto my-5 p-5 max-w-5xl">
+        <h2 class="text-secondary text-2xl font-bold">Education</h2>
+        <ul>
           <li>
-            <div class="event-title">
+            <div class="font-bold flex justify-between">
               <h3>Master of Science</h3>
               <h3>National Taiwan University</h3>
               <h3>09/2021-08/2023</h3>
             </div>
-            <ul class="bullet-list">
+            <ul class="list-disc list-inside">
               <li>Major in Medical Device and Imaging</li>
             </ul>
           </li>
         </ul>
       </section>
-      <section class="skills">
-        <h2>Skills</h2>
-        <ul class="bullet-list">
+      <section class="bg-white mx-auto my-5 p-5 max-w-5xl">
+        <h2 class="text-secondary text-2xl font-bold">Skills</h2>
+        <ul class="list-disc list-inside">
           <li>Python | Matlab | R | Unity | C# | OOP | Git</li>
           <li>Machine Learning | Statistics | Image Processing</li>
         </ul>
       </section>
     </main>
-    <footer>
-      <ul>
-        <li>
+    <footer
+      class="bg-primary text-gray-200 text-sm h-24 flex flex-col justify-evenly items-center"
+    >
+      <ul class="flex justify-around">
+        <li class="inline mr-8">
           <a href="https://github.com/changmin-chen" target="_blank"
             ><i class="fa-brands fa-github fa-2x"></i
           ></a>
         </li>
-        <li>
+        <li class="inline mr-8">
           <a href="mailto: chungmin6363@gmail.com" target="_blank"
             ><i class="fa-solid fa-envelope fa-2x"></i
           ></a>
         </li>
-        <li>
+        <li class="inline mr-8">
           <a href="https://www.linkedin.com/in/changmin-chen/" target="_blank"
             ><i class="fa-brands fa-linkedin fa-2x"></i
           ></a>

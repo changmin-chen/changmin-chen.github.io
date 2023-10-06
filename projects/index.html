@@ -3,65 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Changmin</title>
+    <title>Projects - Changmin Chen</title>
     <link rel="stylesheet" href="../style.css" />
     <script
       src="https://kit.fontawesome.com/e99936643b.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header>
-      <a href="/"><h1>Chang-Min Chen</h1></a>
+  <body class="bg-gray-100 pt-20">
+    <header class="bg-primary fixed top-0 w-full h-20">
+      <button class="menu">&#9776;</button>
+      <a href="/"><h1 class="logo">Changmin Chen</h1></a>
+      <nav class="text-white absolute right-0 flex items-center">
+        <ul>
+          <li class="inline mr-8"><a href="/projects/">Projects</a></li>
+          <li class="inline mr-8"><a href="/activities/">Activities</a></li>
+          <li class="inline mr-8"><a href="#">Blogs</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section class="projects">
-        <ul class="event-container">
-          <li class="event">
-            <div class="intro-with-photo">
-              <img src="../images/#" alt="auo-activity" />
-              <div class="title-with-article">
-                <h2>Auto-Segmentation of Organ on CT</h2>
-                <ul class="bullet-list">
-                  <li>By using Unity and C#.</li>
-                  <li>Player locomotion design and deployment.</li>
-                  <li><a href="#">More...</a></li>
-                </ul>
-              </div>
+    <main class="p-12">
+      <section class="image-processing">
+        <ul class="md:grid gap-12 grid-cols-3">
+          <li class="flex flex-col">
+            <img
+              class="h-64"
+              src="../images/activity-auo.jpg"
+              alt="activity-auo"
+            />
+            <div class="title-with-article">
+              <h2 class="text-secondary text-2xl font-bold">
+                Organ Segmentation using Deep Learning on CT Images
+              </h2>
+              <ul class="bullet-list">
+                <li>By using Unity and C#.</li>
+                <li>Player locomotion design and deployment.</li>
+                <li><a href="#">More...</a></li>
+              </ul>
             </div>
           </li>
-          <li class="event">
-            <div class="intro-with-photo">
-              <img src="../images/alice-in-gravityland.png" alt="alice" />
-              <div class="title-top-article-bot">
-                <h2>Virtual Reality - Alice in Gravityland</h2>
-                <ul class="bullet-list">
-                  <li>By using Unity and C#.</li>
-                  <li>Player locomotion design and deployment.</li>
-                  <li><a href="#">More...</a></li>
-                </ul>
-              </div>
+
+          <li class="flex flex-col">
+            <img
+              class="h-64"
+              src="../images/alice-in-gravityland.png"
+              alt="alice"
+            />
+            <div class="title-top-article-bot">
+              <h2 class="text-secondary text-2xl font-bold">
+                Virtual Reality - Alice in Gravityland
+              </h2>
+              <ul class="list-disc list-inside">
+                <li>By using Unity and C#.</li>
+                <li>Player locomotion design and deployment.</li>
+                <li><a href="#">More...</a></li>
+              </ul>
             </div>
           </li>
-          <li class="event">
-            <div class="intro-with-photo">
-              <img src="../images/chronic-lbp.png" alt="chronic-lbp" />
-              <div>
-                <h2>Chronic Low Back Pain</h2>
-                <p>Master thesis.</p>
-              </div>
+
+          <li class="flex flex-col">
+            <img
+              src="../images/chronic-lbp.png"
+              alt="chronic-lbp"
+              class="h-64"
+            />
+            <div>
+              <h2 class="text-secondary text-2xl font-bold">
+                Chronic Low Back Pain
+              </h2>
+              <p>Master thesis.</p>
             </div>
           </li>
-          <li class="event">
-            <div class="intro-with-photo">
-              <img
-                src="../images/tumor-prediction.png"
-                alt="tumor-prediction"
-              />
-              <div>
-                <h2>Tumor Prediction</h2>
-                <p>U-net and MRI</p>
-              </div>
+
+          <li class="flex flex-col">
+            <img
+              src="../images/tumor-prediction.png"
+              alt="tumor-prediction"
+              class="h-64"
+            />
+            <div>
+              <h2 class="text-secondary text-2xl font-bold">
+                Tumor Prediction
+              </h2>
+              <p>U-net and MRI</p>
             </div>
           </li>
         </ul>
