@@ -11,10 +11,16 @@
     ></script>
   </head>
   <body class="bg-gray-100 pt-20">
-    <header class="bg-primary fixed top-0 w-full h-20">
-      <button class="menu">&#9776;</button>
+    <header
+      class="bg-primary fixed top-0 w-full h-20 flex flex-col justify-center"
+    >
+      <button
+        class="md:hidden absolute right-5 bg-transparent text-white border-none text-4xl cursor-pointer"
+      >
+        &#9776;
+      </button>
       <a href="/"><h1 class="logo">Changmin Chen</h1></a>
-      <nav class="text-white absolute right-0 flex items-center">
+      <nav class="hidden md:flex text-white absolute right-0">
         <ul>
           <li class="inline mr-8"><a href="/projects/">Projects</a></li>
           <li class="inline mr-8"><a href="/activities/">Activities</a></li>

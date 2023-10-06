@@ -11,10 +11,16 @@
     ></script>
   </head>
   <body class="bg-gray-100 pt-20">
-    <header class="bg-primary fixed top-0 w-full h-20">
-      <button class="menu">&#9776;</button>
+    <header
+      class="bg-primary fixed top-0 w-full h-20 flex flex-col justify-center"
+    >
+      <button
+        class="md:hidden absolute right-5 bg-transparent text-white border-none text-4xl cursor-pointer"
+      >
+        &#9776;
+      </button>
       <a href="/"><h1 class="logo">Changmin Chen</h1></a>
-      <nav class="text-white absolute right-0 flex items-center">
+      <nav class="hidden md:flex text-white absolute right-0">
         <ul>
           <li class="inline mr-8"><a href="/projects/">Projects</a></li>
           <li class="inline mr-8"><a href="/activities/">Activities</a></li>
@@ -24,15 +30,15 @@
     </header>
     <main class="p-12">
       <section class="image-processing">
-        <ul class="md:grid gap-12 grid-cols-3">
-          <li class="flex flex-col">
+        <ul class="md:grid gap-x-12 grid-cols-3">
+          <li class="flex flex-col mb-12">
             <img
               class="h-64"
               src="../images/activity-auo.jpg"
               alt="activity-auo"
             />
             <div class="title-with-article">
-              <h2 class="text-secondary text-2xl font-bold">
+              <h2 class="text-secondary text-xl font-bold">
                 Organ Segmentation using Deep Learning on CT Images
               </h2>
               <ul class="bullet-list">
@@ -43,14 +49,14 @@
             </div>
           </li>
 
-          <li class="flex flex-col">
+          <li class="flex flex-col mb-12">
             <img
               class="h-64"
               src="../images/alice-in-gravityland.png"
               alt="alice"
             />
             <div class="title-top-article-bot">
-              <h2 class="text-secondary text-2xl font-bold">
+              <h2 class="text-secondary text-xl font-bold">
                 Virtual Reality - Alice in Gravityland
               </h2>
               <ul class="list-disc list-inside">
@@ -61,30 +67,28 @@
             </div>
           </li>
 
-          <li class="flex flex-col">
+          <li class="flex flex-col mb-12">
             <img
               src="../images/chronic-lbp.png"
               alt="chronic-lbp"
               class="h-64"
             />
             <div>
-              <h2 class="text-secondary text-2xl font-bold">
+              <h2 class="text-secondary text-xl font-bold">
                 Chronic Low Back Pain
               </h2>
               <p>Master thesis.</p>
             </div>
           </li>
 
-          <li class="flex flex-col">
+          <li class="flex flex-col mb-12">
             <img
               src="../images/tumor-prediction.png"
               alt="tumor-prediction"
               class="h-64"
             />
             <div>
-              <h2 class="text-secondary text-2xl font-bold">
-                Tumor Prediction
-              </h2>
+              <h2 class="text-secondary text-xl font-bold">Tumor Prediction</h2>
               <p>U-net and MRI</p>
             </div>
           </li>
