@@ -2,38 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects - Changmin Chen</title>
+    <meta name="format-detection" content="telephone=no" />
+    <title>About - Changmin Chen</title>
     <link rel="stylesheet" href="../style.css" />
     <script
       src="https://kit.fontawesome.com/e99936643b.js"
       crossorigin="anonymous"
     ></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Java Scripts-->
+    <script src="index.js" defer></script>
   </head>
-  <body class="bg-gray-100 pt-20">
+  <body class="bg-gray-100 font-mont">
     <header
-      class="bg-primary fixed top-0 w-full h-20 flex flex-col justify-center"
+      class="bg-primary font-medium w-full h-20 flex justify-between items-center px-32 py-2"
     >
       <button
-        class="md:hidden absolute right-5 bg-transparent text-white border-none text-4xl cursor-pointer"
+        class="lg:hidden absolute right-5 bg-transparent text-white border-none text-4xl cursor-pointer"
       >
         &#9776;
       </button>
-      <a href="/"><h1 class="logo">Changmin Chen</h1></a>
-      <nav class="hidden md:flex text-white absolute right-0">
-        <ul>
-          <li class="inline mr-8"><a href="/projects/">Projects</a></li>
-          <li class="inline mr-8"><a href="/activities/">Activities</a></li>
-          <li class="inline mr-8"><a href="#">Blogs</a></li>
-        </ul>
-      </nav>
+      <div class="hidden w-full lg:flex justify-between items-center">
+        <nav class="flex items-center justify-center text-white">
+          <a class="mr-4" href="/">Home</a>
+          <a class="mx-4" href="/about/">About</a>
+          <a class="mx-4" href="/projects/">Projects</a>
+          <a class="ml-4" href="/blog/">Blog</a>
+        </nav>
+        <nav class="flex items-center justify-center flex-wrap text-white">
+          <a
+            class="w-6 mr-4"
+            href="https://github.com/changmin-chen"
+            target="_blank"
+            ><i class="fa-brands fa-github fa-2x"></i
+          ></a>
+          <a
+            class="w-6 mx-4"
+            href="mailto: chungmin6363@gmail.com"
+            target="_blank"
+            ><i class="fa-solid fa-envelope fa-2x"></i
+          ></a>
+          <a
+            class="w-6 ml-4"
+            href="https://www.linkedin.com/in/changmin-chen/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
+        </nav>
+      </div>
+      <div class="absolute left-[50%] top-1 translate-x-[-50%]">
+        <a href="/">
+          <span class="sr-only">Changmin Chen</span>
+          <img class="h-16 w-auto" src="../images/logo.png" alt />
+        </a>
+      </div>
     </header>
     <main class="p-12">
       <section class="image-processing">
         <ul class="md:grid gap-x-12 grid-cols-3">
           <li class="flex flex-col mb-12">
             <img
-              class="h-64"
+              width="300"
+              height="169"
               src="../images/activity-auo.jpg"
               alt="activity-auo"
             />
@@ -51,7 +89,8 @@
 
           <li class="flex flex-col mb-12">
             <img
-              class="h-64"
+              width="300"
+              height="169"
               src="../images/alice-in-gravityland.png"
               alt="alice"
             />
