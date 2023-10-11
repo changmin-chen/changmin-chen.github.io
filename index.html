@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <title>About - Changmin Chen</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/e99936643b.js"
       crossorigin="anonymous"
@@ -27,10 +27,12 @@
       class="bg-primary font-medium w-full h-20 flex justify-between items-center px-32 py-2"
     >
       <button
+        id="hamburger"
         class="lg:hidden absolute right-5 bg-transparent text-white border-none text-4xl cursor-pointer"
       >
         &#9776;
       </button>
+      <!-- Navigations for screen -->
       <div class="hidden w-full lg:flex justify-between items-center">
         <nav class="flex items-center justify-center text-white">
           <a class="mr-4" href="/">Home</a>
@@ -47,23 +49,59 @@
           ></a>
           <a
             class="w-6 mx-4"
-            href="mailto: chungmin6363@gmail.com"
-            target="_blank"
-            ><i class="fa-solid fa-envelope fa-2x"></i
-          ></a>
-          <a
-            class="w-6 ml-4"
             href="https://www.linkedin.com/in/changmin-chen/"
             target="_blank"
             ><i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
+          <a
+            class="w-6 ml-4"
+            href="mailto: chungmin6363@gmail.com"
+            target="_blank"
+            ><i class="fa-solid fa-envelope fa-2x"></i
           ></a>
         </nav>
       </div>
       <div class="absolute left-[50%] top-1 translate-x-[-50%]">
         <a href="/">
           <span class="sr-only">Changmin Chen</span>
-          <img class="h-16 w-auto" src="/images/logo.png" alt />
+          <img class="h-16 w-auto" src="./images/logo.png" alt />
         </a>
+      </div>
+      <!-- Navigations for mobile -->
+      <div
+        id="nav-menu"
+        class="invisible min-w-[70vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-32 bg-white rounded-lg z-50 backdrop-blur-md"
+        style="
+          opacity: 1;
+          transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);
+        "
+      >
+        <nav class="flex items-center justify-center flex-col">
+          <a href="/" class="text-black mb-1">Home</a>
+          <a href="./about/" class="text-black my-1">About</a>
+          <a href="./projects/" class="text-black my-1">Projects</a>
+          <a href="./blog/" class="text-black mt-1">Blog</a>
+        </nav>
+        <nav class="flex items-center justify-center mt-4">
+          <a
+            class="w-6 mx-3"
+            href="https://github.com/changmin-chen"
+            target="_blank"
+            ><i class="fa-brands fa-github fa-xl"></i
+          ></a>
+          <a
+            class="w-6 mx-3"
+            href="https://www.linkedin.com/in/changmin-chen/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-xl"></i
+          ></a>
+          <a
+            class="w-6 mx-3"
+            href="mailto: chungmin6363@gmail.com"
+            target="_blank"
+            ><i class="fa-solid fa-envelope fa-xl"></i
+          ></a>
+        </nav>
       </div>
     </header>
 
@@ -71,7 +109,7 @@
       <section class="grid w-full grid-cols-8 gap-8 md:gap-16">
         <div class="order-1 md:order-2 col-span-8 md:col-span-4">
           <img
-            src="/images/ProfilePicture.png"
+            src="./images/ProfilePicture.png"
             alt="profile-photo"
             class="rounded-2xl p-5"
           />
