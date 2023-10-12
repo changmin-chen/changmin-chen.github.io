@@ -19,7 +19,7 @@
             rel="stylesheet"
     />
     <!--Java Scripts-->
-    <script defer src="index.js"></script>
+    <script defer src="../index.js"></script>
 </head>
 <body class="bg-gray-100 font-mont">
 <header
@@ -65,7 +65,7 @@
         </a>
     </div>
 </header>
-<main class="p-12">
+<main>
     <div class="px-6 py-24 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
             <h1 class="text-4xl font-bold tracking-tight text-cg_yellow sm:text-6xl">
@@ -77,7 +77,7 @@
     <!--Projects Container-->
     <div class="bg-gray-50 py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
+            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <article class="flex flex-col items-start justify-between">
                     <div class="relative w-full">
                         <img alt="Organ Segmentation"
@@ -86,7 +86,7 @@
                              width="300"
                              height="169"
                              sizes="(max-width: 300px) 100vw, 300px"
-                             src="../images/activity-auo.jpg"
+                             src="../images/auo-organ.jpg"
                              srcset=""
                         />
                     </div>
@@ -95,18 +95,29 @@
                         <div class="mt-8 flex items-center gap-x-4 text-xs">
                             <time class="text-gray-500" datetime="2020-03-16">July 22, 2023</time>
                             <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
-                            >Vue.js</p>
+                            >Machine Learning</p>
                             <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
-                            >ABC</p>
+                            >3D Model</p>
+                            <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
+                            >CT</p>
                         </div>
                         <!--                        Article Heading and Intro-->
                         <div class="group relative">
                             <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                <a href="#">Organ Segmentation using deep he</a>
+                                <a href="#">Organ Segmentation/ 3D Modeling</a>
                             </h3>
                             <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                                By using Pytorch, trained the U-net model. Segment human organs. Evaluated the
-                                performance.
+                                In this project, I designed and develop the image processing pipeline to build 3D human
+                                organ model from the subject's computed tomography (CT) image.
+                                By using Python, I processed the abdomen CT images. The images
+                                were in common, standard medical image format, such as DICOM and NIFTI.
+                                By using Pytorch, I trained the machine learning (ML) model. The ML model will
+                                automatically segment the human organs from abdomen CT images.
+                                I evaluated the ML model performance for segmentation after the model was trained.
+                                By using VTK, I eventually build the 3D model of human organ.
+                                This 3D model will help doctor and physicians visualize the patient's organ
+                                stereotactically, catching the spatial information of the organs in a more
+                                straightforward way.
                             </p>
                         </div>
                     </div>
@@ -119,7 +130,7 @@
                              width="300"
                              height="169"
                              sizes="(max-width: 300px) 100vw, 300px"
-                             src="../images/alice-in-gravityland.png"
+                             src="../images/alice.jpg"
                              srcset=""
                         />
                     </div>
