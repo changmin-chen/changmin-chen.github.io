@@ -1,138 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="telephone=no" name="format-detection"/>
     <title>About - Changmin Chen</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link href="../style.css" rel="stylesheet"/>
     <script
-      src="https://kit.fontawesome.com/e99936643b.js"
-      crossorigin="anonymous"
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/e99936643b.js"
     ></script>
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+            rel="stylesheet"
     />
     <!--Java Scripts-->
-    <script src="index.js" defer></script>
-  </head>
-  <body class="bg-gray-100 font-mont">
-    <header
-      class="bg-primary font-medium w-full h-20 flex justify-between items-center px-32 py-2"
+    <script defer src="index.js"></script>
+</head>
+<body class="bg-gray-100 font-mont">
+<header
+        class="bg-primary font-medium w-full h-20 flex justify-between items-center px-32 py-2"
+>
+    <button
+            class="lg:hidden absolute right-5 bg-transparent text-white border-none text-4xl cursor-pointer"
     >
-      <button
-        class="lg:hidden absolute right-5 bg-transparent text-white border-none text-4xl cursor-pointer"
-      >
         &#9776;
-      </button>
-      <div class="hidden w-full lg:flex justify-between items-center">
+    </button>
+    <div class="hidden w-full lg:flex justify-between items-center">
         <nav class="flex items-center justify-center text-white">
-          <a class="mr-4" href="/">Home</a>
-          <a class="mx-4" href="/about/">About</a>
-          <a class="mx-4" href="/projects/">Projects</a>
-          <a class="ml-4" href="/blog/">Blog</a>
+            <a class="mr-4" href="/">Home</a>
+            <a class="mx-4" href="/about/">About</a>
+            <a class="mx-4" href="/projects/">Projects</a>
+            <a class="ml-4" href="/blog/">Blog</a>
         </nav>
         <nav class="flex items-center justify-center flex-wrap text-white">
-          <a
-            class="w-6 mr-4"
-            href="https://github.com/changmin-chen"
-            target="_blank"
+            <a
+                    class="w-6 mr-4"
+                    href="https://github.com/changmin-chen"
+                    target="_blank"
             ><i class="fa-brands fa-github fa-2x"></i
-          ></a>
-          <a
-            class="w-6 mx-4"
-            href="mailto: chungmin6363@gmail.com"
-            target="_blank"
+            ></a>
+            <a
+                    class="w-6 mx-4"
+                    href="mailto: chungmin6363@gmail.com"
+                    target="_blank"
             ><i class="fa-solid fa-envelope fa-2x"></i
-          ></a>
-          <a
-            class="w-6 ml-4"
-            href="https://www.linkedin.com/in/changmin-chen/"
-            target="_blank"
+            ></a>
+            <a
+                    class="w-6 ml-4"
+                    href="https://www.linkedin.com/in/changmin-chen/"
+                    target="_blank"
             ><i class="fa-brands fa-linkedin fa-2x"></i
-          ></a>
+            ></a>
         </nav>
-      </div>
-      <div class="absolute left-[50%] top-1 translate-x-[-50%]">
+    </div>
+    <div class="absolute left-[50%] top-1 translate-x-[-50%]">
         <a href="/">
-          <span class="sr-only">Changmin Chen</span>
-          <img class="h-16 w-auto" src="../images/logo.png" alt />
+            <span class="sr-only">Changmin Chen</span>
+            <img alt class="h-16 w-auto" src="../images/logo.png"/>
         </a>
-      </div>
-    </header>
-    <main class="p-12">
-      <section class="image-processing">
-        <ul class="md:grid gap-x-12 grid-cols-3">
-          <li class="flex flex-col mb-12">
-            <img
-              width="300"
-              height="169"
-              src="../images/activity-auo.jpg"
-              alt="activity-auo"
-            />
-            <div class="title-with-article">
-              <h2 class="text-secondary text-xl font-bold">
-                Organ Segmentation using Deep Learning on CT Images
-              </h2>
-              <ul class="bullet-list">
-                <li>By using Unity and C#.</li>
-                <li>Player locomotion design and deployment.</li>
-                <li><a href="#">More...</a></li>
-              </ul>
+    </div>
+</header>
+<main class="p-12">
+    <div class="px-6 py-24 sm:py-32 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-cg_yellow sm:text-6xl">
+                My Projects
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-500">Subtitle!</p>
+        </div>
+    </div>
+    <!--Projects Container-->
+    <div class="bg-gray-50 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
+                <article class="flex flex-col items-start justify-between">
+                    <div class="relative w-full">
+                        <img alt="Organ Segmentation"
+                             class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] wp-post-image"
+                             decoding="async"
+                             width="300"
+                             height="169"
+                             sizes="(max-width: 300px) 100vw, 300px"
+                             src="../images/activity-auo.jpg"
+                             srcset=""
+                        />
+                    </div>
+                    <div class="max-w-xl">
+                        <!--                        Article Date and Tags-->
+                        <div class="mt-8 flex items-center gap-x-4 text-xs">
+                            <time class="text-gray-500" datetime="2020-03-16">July 22, 2023</time>
+                            <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
+                            >Vue.js</p>
+                            <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
+                            >ABC</p>
+                        </div>
+                        <!--                        Article Heading and Intro-->
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                                <a href="#">Organ Segmentation using deep he</a>
+                            </h3>
+                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                By using Pytorch, trained the U-net model. Segment human organs. Evaluated the
+                                performance.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col items-start justify-between">
+                    <div class="relative w-full">
+                        <img alt="Alice"
+                             class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] wp-post-image"
+                             decoding="async"
+                             width="300"
+                             height="169"
+                             sizes="(max-width: 300px) 100vw, 300px"
+                             src="../images/alice-in-gravityland.png"
+                             srcset=""
+                        />
+                    </div>
+                    <div class="max-w-xl">
+                        <!--                        Article Date and Tags-->
+                        <div class="mt-8 flex items-center gap-x-4 text-xs">
+                            <time class="text-gray-500" datetime="2020-03-16">July 22, 2023</time>
+                            <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
+                            >Vue.js</p>
+                            <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
+                            >ABC</p>
+                        </div>
+                        <!--                        Article Heading and Intro-->
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                                <a href="#">Alice in Gravityland</a>
+                            </h3>
+                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                By using Unity and C#. I designed and optimized the locomotion experience.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col items-start justify-between">
+                    <div class="relative w-full">
+                        <img alt="ChronicLBP"
+                             class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] wp-post-image"
+                             decoding="async"
+                             width="300"
+                             height="169"
+                             sizes="(max-width: 300px) 100vw, 300px"
+                             src="../images/chronic-lbp.png"
+                             srcset=""
+                        />
+                    </div>
+                    <div class="max-w-xl">
+                        <!--                        Article Date and Tags-->
+                        <div class="mt-8 flex items-center gap-x-4 text-xs">
+                            <time class="text-gray-500" datetime="2020-03-16">July 22, 2023</time>
+                            <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
+                            >Vue.js</p>
+                            <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
+                            >ABC</p>
+                        </div>
+                        <!--                        Article Heading and Intro-->
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                                <a href="#">Chronic Low Back Pain</a>
+                            </h3>
+                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                Master thesis. Functional MRI (fMRI).
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col items-start justify-between">
+                    <div class="relative w-full">
+                        <img alt="GKRS"
+                             class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] wp-post-image"
+                             decoding="async"
+                             width="300"
+                             height="169"
+                             sizes="(max-width: 300px) 100vw, 300px"
+                             src="../images/tumor-prediction.png"
+                             srcset=""
+                        />
+                    </div>
+                    <div class="max-w-xl">
+                        <!--                        Article Date and Tags-->
+                        <div class="mt-8 flex items-center gap-x-4 text-xs">
+                            <time class="text-gray-500" datetime="2020-03-16">July 22, 2023</time>
+                            <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
+                            >Vue.js</p>
+                            <p class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:text-cg_yellow"
+                            >ABC</p>
+                        </div>
+                        <!--                        Article Heading and Intro-->
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                                <a href="#">Pre-GKRS Vestibular Tumor Segmentation/ Response Predction</a>
+                            </h3>
+                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                U-net and MRI. T1W, T1W+C, T2W MRI Images
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque culpa debitis
+                                enim impedit neque nostrum nulla officia quibusdam sed. Adipisci dicta magni perferendis
+                                placeat provident sapiente sit, tempora totam?
+                            </p>
+                        </div>
+                    </div>
+                </article>
             </div>
-          </li>
-
-          <li class="flex flex-col mb-12">
-            <img
-              width="300"
-              height="169"
-              src="../images/alice-in-gravityland.png"
-              alt="alice"
-            />
-            <div class="title-top-article-bot">
-              <h2 class="text-secondary text-xl font-bold">
-                Virtual Reality - Alice in Gravityland
-              </h2>
-              <ul class="list-disc list-inside">
-                <li>By using Unity and C#.</li>
-                <li>Player locomotion design and deployment.</li>
-                <li><a href="#">More...</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="flex flex-col mb-12">
-            <img
-              src="../images/chronic-lbp.png"
-              alt="chronic-lbp"
-              class="h-64"
-            />
-            <div>
-              <h2 class="text-secondary text-xl font-bold">
-                Chronic Low Back Pain
-              </h2>
-              <p>Master thesis.</p>
-            </div>
-          </li>
-
-          <li class="flex flex-col mb-12">
-            <img
-              src="../images/tumor-prediction.png"
-              alt="tumor-prediction"
-              class="h-64"
-            />
-            <div>
-              <h2 class="text-secondary text-xl font-bold">Tumor Prediction</h2>
-              <p>U-net and MRI</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </main>
-  </body>
+        </div>
+    </div>
+</main>
+</body>
 </html>

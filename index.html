@@ -1,153 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--specify language, better for search engine-->
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <title>About - Changmin Chen</title>
-    <link rel="stylesheet" href="style.css" />
+<!--specify language, better for search engine-->
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <title>Homepage - Changmin Chen</title>
+    <link href="style.css" rel="stylesheet"/>
     <script
-      src="https://kit.fontawesome.com/e99936643b.js"
-      crossorigin="anonymous"
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/e99936643b.js"
     ></script>
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+            rel="stylesheet"
     />
     <!--Java Scripts-->
-    <script src="index.js" defer></script>
-  </head>
-  <body class="bg-gray-100 font-mont">
-    <header
-      class="bg-primary font-medium w-full h-20 flex justify-between items-center px-32 py-2"
+    <script defer src="index.js"></script>
+</head>
+<body class="bg-gray-100 font-mont">
+<header
+        class="bg-primary font-medium w-full h-20 flex justify-between items-center px-32 py-2"
+>
+    <button
+            class="lg:hidden absolute right-5 bg-transparent text-white border-none text-4xl cursor-pointer"
+            id="hamburger"
     >
-      <button
-        id="hamburger"
-        class="lg:hidden absolute right-5 bg-transparent text-white border-none text-4xl cursor-pointer"
-      >
         &#9776;
-      </button>
-      <!-- Navigations for screen -->
-      <div class="hidden w-full lg:flex justify-between items-center">
+    </button>
+    <!-- Navigations for screen -->
+    <div class="hidden w-full lg:flex justify-between items-center">
         <nav class="flex items-center justify-center text-white">
-          <a class="mr-4" href="/">Home</a>
-          <a class="mx-4" href="/about/">About</a>
-          <a class="mx-4" href="/projects/">Projects</a>
-          <a class="ml-4" href="/blog/">Blog</a>
+            <a class="mr-4" href="/">Home</a>
+            <a class="mx-4" href="/about/">About</a>
+            <a class="mx-4" href="/projects/">Projects</a>
+            <a class="ml-4" href="/blog/">Blog</a>
         </nav>
         <nav class="flex items-center justify-center flex-wrap text-white">
-          <a
-            class="w-6 mr-4"
-            href="https://github.com/changmin-chen"
-            target="_blank"
+            <a
+                    class="w-6 mr-4"
+                    href="https://github.com/changmin-chen"
+                    target="_blank"
             ><i class="fa-brands fa-github fa-2x"></i
-          ></a>
-          <a
-            class="w-6 mx-4"
-            href="https://www.linkedin.com/in/changmin-chen/"
-            target="_blank"
+            ></a>
+            <a
+                    class="w-6 mx-4"
+                    href="https://www.linkedin.com/in/changmin-chen/"
+                    target="_blank"
             ><i class="fa-brands fa-linkedin fa-2x"></i
-          ></a>
-          <a
-            class="w-6 ml-4"
-            href="mailto: chungmin6363@gmail.com"
-            target="_blank"
+            ></a>
+            <a
+                    class="w-6 ml-4"
+                    href="mailto: chungmin6363@gmail.com"
+                    target="_blank"
             ><i class="fa-solid fa-envelope fa-2x"></i
-          ></a>
+            ></a>
         </nav>
-      </div>
-      <div class="absolute left-[50%] top-1 translate-x-[-50%]">
+    </div>
+    <div class="absolute left-[50%] top-1 translate-x-[-50%]">
         <a href="/">
-          <span class="sr-only">Changmin Chen</span>
-          <img class="h-16 w-auto" src="./images/logo.png" alt />
+            <span class="sr-only">Changmin Chen</span>
+            <img alt class="h-16 w-auto" src="./images/logo.png"/>
         </a>
-      </div>
-      <!-- Navigations for mobile -->
-      <div
-        id="nav-menu"
-        class="invisible min-w-[70vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-32 bg-white rounded-lg z-50 backdrop-blur-md"
-        style="
+    </div>
+    <!-- Navigations for mobile -->
+    <div
+            class="invisible min-w-[70vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-32 bg-white rounded-lg z-50 backdrop-blur-md"
+            id="nav-menu"
+            style="
           opacity: 1;
           transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);
         "
-      >
+    >
         <nav class="flex items-center justify-center flex-col">
-          <a href="/" class="text-black mb-1">Home</a>
-          <a href="./about/" class="text-black my-1">About</a>
-          <a href="./projects/" class="text-black my-1">Projects</a>
-          <a href="./blog/" class="text-black mt-1">Blog</a>
+            <a class="text-black mb-1" href="/">Home</a>
+            <a class="text-black my-1" href="/about/">About</a>
+            <a class="text-black my-1" href="/projects/">Projects</a>
+            <a class="text-black mt-1" href="/blog/">Blog</a>
         </nav>
         <nav class="flex items-center justify-center mt-4">
-          <a
-            class="w-6 mx-3"
-            href="https://github.com/changmin-chen"
-            target="_blank"
+            <a
+                    class="w-6 mx-3"
+                    href="https://github.com/changmin-chen"
+                    target="_blank"
             ><i class="fa-brands fa-github fa-xl"></i
-          ></a>
-          <a
-            class="w-6 mx-3"
-            href="https://www.linkedin.com/in/changmin-chen/"
-            target="_blank"
+            ></a>
+            <a
+                    class="w-6 mx-3"
+                    href="https://www.linkedin.com/in/changmin-chen/"
+                    target="_blank"
             ><i class="fa-brands fa-linkedin fa-xl"></i
-          ></a>
-          <a
-            class="w-6 mx-3"
-            href="mailto: chungmin6363@gmail.com"
-            target="_blank"
+            ></a>
+            <a
+                    class="w-6 mx-3"
+                    href="mailto: chungmin6363@gmail.com"
+                    target="_blank"
             ><i class="fa-solid fa-envelope fa-xl"></i
-          ></a>
+            ></a>
         </nav>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <main class="p-8 md:p-32 w-full flex flex-col justify-center items-center">
-      <section class="grid w-full grid-cols-8 gap-8 md:gap-16">
+<main class="p-8 md:p-32 w-full flex flex-col justify-center items-center">
+    <section class="grid w-full grid-cols-8 gap-8 md:gap-16">
         <div class="order-1 md:order-2 col-span-8 md:col-span-4">
-          <img
-            src="./images/ProfilePicture.png"
-            alt="profile-photo"
-            class="rounded-2xl p-5"
-          />
+            <img
+                    alt="profile-photo"
+                    class="rounded-2xl p-5"
+                    src="./images/ProfilePicture.png"
+            />
         </div>
         <div
-          class="order-2 md:order-1 col-span-8 md:col-span-4 flex flex-col items-start justify-start"
+                class="order-2 md:order-1 col-span-8 md:col-span-4 flex flex-col items-start justify-start"
         >
-          <h2 class="font-bold text-lg mb-4">Biography</h2>
-          <p class="font-medium">
-            I am Chang-Min Chen, a recent master's graduate in medical device
-            and imaging, with extensive experience in medical data research and
-            programming.
-          </p>
-          <p class="font-medium my-4">
-            My focus areas include signal processing, image analysis, and
-            statistical analysis, and I have previously been involved in image
-            algorithm development at a technology company.
-          </p>
-          <p class="font-medium my-4">
-            In addition to my technical abilities, my clinical internship
-            experience has molded me into an outstanding team collaborator. I
-            excel at communicating and working closely with colleagues, with a
-            deep understanding of the requirements of medical imaging
-            examinations.
-          </p>
-          <p class="font-medium">
-            Furthermore, I bring international experience to the table, having
-            interned at a hospital in Japan and presented my research findings
-            in English at an international conference in Canada.
-          </p>
+            <h2 class="font-bold text-lg mb-4">Biography</h2>
+            <p class="font-medium">
+                I am Chang-Min Chen, a recent master's graduate in medical device
+                and imaging, with extensive experience in medical data research and
+                programming.
+            </p>
+            <p class="font-medium my-4">
+                My focus areas include signal processing, image analysis, and
+                statistical analysis, and I have previously been involved in image
+                algorithm development at a technology company.
+            </p>
+            <p class="font-medium my-4">
+                In addition to my technical abilities, my clinical internship
+                experience has molded me into an outstanding team collaborator. I
+                excel at communicating and working closely with colleagues, with a
+                deep understanding of the requirements of medical imaging
+                examinations.
+            </p>
+            <p class="font-medium">
+                Furthermore, I bring international experience to the table, having
+                interned at a hospital in Japan and presented my research findings
+                in English at an international conference in Canada.
+            </p>
         </div>
-      </section>
-    </main>
+    </section>
+</main>
 
-    <footer
-      class="bg-primary text-gray-200 text-sm h-24 flex flex-col justify-evenly items-center"
-    >
-      <p>&copy; 2023 Chang-Min Chen. All rights reserved.</p>
-    </footer>
-  </body>
+<footer
+        class="bg-primary text-gray-200 text-sm h-24 flex flex-col justify-evenly items-center"
+>
+    <p>&copy; 2023 Chang-Min Chen. All rights reserved.</p>
+</footer>
+</body>
 </html>
