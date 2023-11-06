@@ -700,6 +700,10 @@ video {
   -webkit-line-clamp: 3;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -738,6 +742,10 @@ video {
 
 .\!w-6 {
   width: 1.5rem !important;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-10 {
@@ -861,8 +869,8 @@ video {
   row-gap: 5rem;
 }
 
-.self-start {
-  align-self: flex-start;
+.self-center {
+  align-self: center;
 }
 
 .rounded-2xl {
@@ -1114,6 +1122,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:aspect-\[2\/1\] {
     aspect-ratio: 2/1;
   }
@@ -1159,20 +1171,40 @@ video {
     margin-bottom: 8rem;
   }
 
+  .md\:inline-block {
+    display: inline-block;
+  }
+
   .md\:\!w-4 {
     width: 1rem !important;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-\[75\%\] {
     width: 75%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:gap-16 {
     gap: 4rem;
+  }
+
+  .md\:rounded-2xl {
+    border-radius: 1rem;
   }
 
   .md\:p-2 {
@@ -1225,8 +1257,16 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:self-start {
+    align-self: flex-start;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
